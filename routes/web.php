@@ -17,10 +17,10 @@ Route::get('/', function () {
 */
 Route::group(array('prefix' => 'api'), function()
 {
-Route::get('/', function () {
-      return response()->json(['message' => 'HelloWord API', 'status' => 'Connected']);;
+/*Route::get('/', function () {
+      return response()->json('message: HelloWord API');;
   });
-
+*/
  Route::get('hello', 'HelloController@show');
 
 });
